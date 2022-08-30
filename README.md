@@ -1,3 +1,35 @@
+## 목차
+
+[챌린지 과제 가이드](#챌린지-과제-가이드)
+
+[Requirements](#-requirements)
+
+[JSDoc Boilerplate](#JSDoc-Boilerplate)
+
+## 하고 싶은 말
+
+정적페이지로 문서화 해주는 기능을 처음 써봤습니다. 유용할 거 같습니다.
+
+어떻게 요구사항을 다 충족하고 만든 거 같은데 왠지 이게 아닌 거 같은 기분이 듭니다. 그래서 체크리스트를 만들진 않고 비워둡니다.
+
+## JSDoc 사용기
+
+### **객체 파라미터를 표현하는 방법**
+
+두 가지 방법이 있는데 vscode에서는 모두 잘 작동하지만 html 결과물에서는 todo2의 경우 표현되지 않는다.
+
+- 코드
+  <img width="823" alt="diff-obj-param-code" src="https://user-images.githubusercontent.com/77876601/187384083-dfff04a0-e2d2-4488-882a-dfb9c7742159.png">
+
+- html 결과물
+  <img width="538" alt="diff-obj-param-doc" src="https://user-images.githubusercontent.com/77876601/187384089-98f304a3-40e1-42cf-b4bc-24da1b34daea.png">
+
+- todo2 형식일 경우 에러 메시지
+
+```bash
+ERROR: Unable to parse a tag's type expression for source file /경로/wanted-pre-onboarding-challenge-fe-2/src/index.js in line 11 with tag title "param" and text "{{id:number,content:string,done:boolean,category:string,tag?:string}} objectParam": Invalid type expression "{id:number,content:string,done:boolean,category:string,tag?:string}": Expected "#", "$", "(", ",", "-", ".", "/", "0", ":", "<", "=", "@", "[]", "\\", "_", "}", "~", "‌", "‍", Unicode combining mark, Unicode decimal number, Unicode letter number, Unicode lowercase letter, Unicode modifier letter, Unicode other letter, Unicode punctuation connector, Unicode titlecase letter, Unicode uppercase letter, or [1-9] but "?" found.
+```
+
 ## 챌린지 과제 가이드
 
 > 요구 사항을 구현하지 않고 설계만합니다.
